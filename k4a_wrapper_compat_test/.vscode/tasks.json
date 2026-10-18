@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "K4A Wrapper: Configure",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--preset", "vs2022-x64", "-DK4A_WRAPPER_ROOT=${input:k4aWrapperRoot}"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": []
+    },
+    {
+      "label": "K4A Wrapper: Build Release",
+      "type": "shell",
+      "command": "cmake",
+      "args": ["--build", "--preset", "release"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "dependsOn": "K4A Wrapper: Configure",
+      "problemMatcher": ["$msCompile"]
+    },
+    {
+      "label": "K4A Wrapper: Quick Test",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\run_test.ps1", "-K4AWrapperRoot", "${input:k4aWrapperRoot}"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": { "kind": "test", "isDefault": true }
+    },
+    {
+      "label": "K4A Wrapper: Full Test",
+      "type": "shell",
+      "command": "powershell",
+      "args": ["-ExecutionPolicy", "Bypass", "-File", "${workspaceFolder}\\run_test.ps1", "-Full", "-Frames", "5", "-K4AWrapperRoot", "${input:k4aWrapperRoot}"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ],
+  "inputs": [
+    {
+      "id": "k4aWrapperRoot",
+      "type": "promptString",
+      "description": "Path to the prebuilt OrbbecSDK-K4A-Wrapper root",
+      "default": "D:\\Femto_mega\\OrbbecSDK-K4A-Wrapperp"
+    }
+  ]
+}
+

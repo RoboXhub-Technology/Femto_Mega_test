@@ -2,7 +2,56 @@
 
 本目录与《Orbbec Femto Mega 3D 深度相机验收记录表》一一对应，用 Orbbec SDK v2 采集设备实际值并保存 CSV/JSON 原始证据。主程序不依赖 OpenCV，适用 Windows 10/11 和 Linux。
 
-现在同时提供两套独立实现：原有 C++17/Orbbec SDK v2 版本，以及 [Python/pyorbbecsdk v2 版本](python/README.md)。Python版主程序位于 `python/femto_mega_acceptance.py`，完整自动测试入口为 `scripts/run_acceptance_plan_python.ps1`。
+现在提供三条互相补充的测试路径：原有 C++17/Orbbec SDK v2、[Python/pyorbbecsdk v2](python/README.md)，以及已完成本机实测的 [OrbbecSDK-K4A-Wrapper 兼容性工程](k4a_wrapper_compat_test/README.md)。Python 版主程序位于 `python/femto_mega_acceptance.py`，完整自动测试入口为 `scripts/run_acceptance_plan_python.ps1`。
+
+## 2026-10-18 本机已完成结果
+
+被测设备为 Femto Mega，序列号 `CL3N241005X`，固件 `1.3.0`。原始证据仍保存在 `evidence-python`；K4A Wrapper 的只读基准副本保存在 `k4a_wrapper_compat_test/results/reference_CL3N241005X_2026-10-18`。
+
+| 验收项 | 本机结果 | 当前判定 |
+|---|---|---|
+| 14 个深度分辨率@帧率组合 | pyorbbecsdk 列表全部存在并完成取流；K4A full 每项 5/5 帧 PASS | 通过 |
+| 深度 FOV | 内参针孔近似：NFOV 约 H64.8°×V59.3°，WFOV 约 H90.8°×V90.8° | 不能用该近似直接核验广角标称 FOV，待物理角度/畸变模型复核 |
+| RGB 3840×2160 | 5/15/25 fps 可用；30 fps 未列出，30 fps 实测启动失败 | 不满足“≥30 fps” |
+| RGB FOV | 4K 内参近似 H81.17°×V51.45° | 满足 H80°、V51° |
+| RGB HDR | `OB_PROP_COLOR_HDR_BOOL` 未列出、不可读、不可写；K4A Wrapper 不把该项作为 Mega 兼容项 | 当前设备/固件/SDK 组合未证明支持 |
+| IMU | pyorbbecsdk 60 s：加速度与陀螺仪各 2984 帧，约 49.777 Hz，帧序号缺口 0、超时 0；K4A 5/5 PASS | 通过 |
+| OrbbecSDK-K4A-Wrapper | v2.0.12 + 配套 OrbbecSDK.dll 2.5.5；枚举、打开、标定、转换、控制项、同步流、深度矩阵、4K 5/15/25、IMU | 整体通过（不含人体骨架、HDR、4K30） |
+
+工作距离、1 m 相对精度和最大功耗尚未完成，因此验收表中不会将它们误标为通过。
+
+### K4A Wrapper 本机实跑与复现
+
+本机原始实测目录是 `D:\Femto_mega\k4a_wrapper_compat_test`，Wrapper 预编译包位于 `D:\Femto_mega\OrbbecSDK-K4A-Wrapperp`。使用 CMake 4.4.4、Visual Studio 2022 Build Tools x64/MSBuild 17.14.60、Wrapper v2.0.12 及其配套 OrbbecSDK.dll 2.5.5，实际执行：
+
+```powershell
+cd D:\Femto_mega\k4a_wrapper_compat_test
+cmake --preset vs2022-x64
+cmake --build --preset release
+powershell -ExecutionPolicy Bypass -File .\run_test.ps1 -Full -Frames 5
+```
+
+工程整合后的等效复现命令是：
+
+```powershell
+cd D:\Master\Orbbec_Femto_Mega_test_code\k4a_wrapper_compat_test
+powershell -ExecutionPolicy Bypass -File .\run_test.ps1 `
+  -Full -Frames 5 -Device 0 `
+  -K4AWrapperRoot "D:\SDK\OrbbecSDK-K4A-Wrapper"
+```
+
+复现者通常不需要修改 `src\main.cpp`。必须按自己的电脑修改 `-K4AWrapperRoot`；接入多台相机时再改 `-Device`，严格复测时保持 `-Frames 5`。VS Code 任务也会提示输入 Wrapper 根目录。不要把独立安装的 OrbbecSDK DLL 覆盖到 Wrapper 运行目录，因为版本混用会破坏可比性。
+
+新结果默认进入 `k4a_wrapper_compat_test\results\current`，不会覆盖序列号 `CL3N241005X` 的基准。比较另一台相机的 full 结果：
+
+```powershell
+cd D:\Master\Orbbec_Femto_Mega_test_code\k4a_wrapper_compat_test
+powershell -ExecutionPolicy Bypass -File .\compare_results.ps1 `
+  -Candidate .\results\current\k4a_wrapper_full.json `
+  -Output .\results\current\comparison.json
+```
+
+另一台相机的序列号应当不同；应比较的是测试名称、配置和所有 `required` 项的 PASS/FAIL。`SHA256SUMS.txt` 用于确认整合后的源码与基准 JSON 是否被修改。哈希与独立复测能够支持“结果可复现”，但不是可信时间戳或作者身份的密码学证明。完整说明见 [K4A Wrapper 复测文档](k4a_wrapper_compat_test/README.md)。
 
 ## 能够测量的验收项
 
