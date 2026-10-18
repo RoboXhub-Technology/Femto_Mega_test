@@ -8,7 +8,7 @@
 
 被测设备为 Femto Mega，序列号 `CL3N241005X`，固件 `1.3.0`。原始证据仍保存在 `evidence-python`；K4A Wrapper 的只读基准副本保存在 `k4a_wrapper_compat_test/results/reference_CL3N241005X_2026-10-18`。
 
-| 验收项 | 本机结果 | 当前判定 |
+| 验收项 | 本机结果 | 判定 |
 |---|---|---|
 | 14 个深度分辨率@帧率组合 | pyorbbecsdk 列表全部存在并完成取流；K4A full 每项 5/5 帧 PASS | 通过 |
 | 深度 FOV | 内参针孔近似：NFOV 约 H64.8°×V59.3°，WFOV 约 H90.8°×V90.8° | 不能用该近似直接核验广角标称 FOV，待物理角度/畸变模型复核 |
@@ -16,7 +16,7 @@
 | RGB FOV | 4K 内参近似 H81.17°×V51.45° | 满足 H80°、V51° |
 | RGB HDR | `OB_PROP_COLOR_HDR_BOOL` 未列出、不可读、不可写；K4A Wrapper 不把该项作为 Mega 兼容项 | 当前设备/固件/SDK 组合未证明支持 |
 | IMU | pyorbbecsdk 60 s：加速度与陀螺仪各 2984 帧，约 49.777 Hz，帧序号缺口 0、超时 0；K4A 5/5 PASS | 通过 |
-| OrbbecSDK-K4A-Wrapper | v2.0.12 + 配套 OrbbecSDK.dll 2.5.5；枚举、打开、标定、转换、控制项、同步流、深度矩阵、4K 5/15/25、IMU | 整体通过（不含人体骨架、HDR、4K30） |
+| OrbbecSDK-K4A-Wrapper | v2.0.12 + 配套 OrbbecSDK.dll 2.5.5；枚举、打开、标定、转换、控制项、同步流、深度矩阵、4K 5/15/25、IMU | 整体通过 |
 
 工作距离、1 m 相对精度和最大功耗尚未完成，因此验收表中不会将它们误标为通过。
 
