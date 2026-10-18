@@ -2,13 +2,13 @@
 
 本目录与《Orbbec Femto Mega 3D 深度相机验收记录表》一一对应，用 Orbbec SDK v2 采集设备实际值并保存 CSV/JSON 原始证据。主程序不依赖 OpenCV，适用 Windows 10/11 和 Linux。
 
-现在提供三条互相补充的测试路径：原有 C++17/Orbbec SDK v2、[Python/pyorbbecsdk v2](python/README.md)，以及已完成本机实测的 [OrbbecSDK-K4A-Wrapper 兼容性工程](k4a_wrapper_compat_test/README.md)。Python 版主程序位于 `python/femto_mega_acceptance.py`，完整自动测试入口为 `scripts/run_acceptance_plan_python.ps1`。
+现在提供三条互相补充的测试路径：原有 C++17/Orbbec SDK v2、[Python/pyorbbecsdk v2](python/README.md)，以及已完成实测的 [OrbbecSDK-K4A-Wrapper 兼容性工程](k4a_wrapper_compat_test/README.md)。Python 版主程序位于 `python/femto_mega_acceptance.py`，完整自动测试入口为 `scripts/run_acceptance_plan_python.ps1`。
 
-## 2026-10-18 本机已完成结果
+## 2026-10-18 已完成结果
 
 被测设备为 Femto Mega，序列号 `CL3N241005X`，固件 `1.3.0`。原始证据仍保存在 `evidence-python`；K4A Wrapper 的只读基准副本保存在 `k4a_wrapper_compat_test/results/reference_CL3N241005X_2026-10-18`。
 
-| 验收项 | 本机结果 | 判定 |
+| 验收项 | 结果 | 判定 |
 |---|---|---|
 | 14 个深度分辨率@帧率组合 | pyorbbecsdk 列表全部存在并完成取流；K4A full 每项 5/5 帧 PASS | 通过 |
 | 深度 FOV | 内参针孔近似：NFOV 约 H64.8°×V59.3°，WFOV 约 H90.8°×V90.8° | 不能用该近似直接核验广角标称 FOV，待物理角度/畸变模型复核 |
@@ -20,9 +20,9 @@
 
 工作距离、1 m 相对精度和最大功耗尚未完成，因此验收表中不会将它们误标为通过。
 
-### K4A Wrapper 本机实跑与复现
+### K4A Wrapper 实跑与复现
 
-本机原始实测目录是 `D:\Femto_mega\k4a_wrapper_compat_test`，Wrapper 预编译包位于 `D:\Femto_mega\OrbbecSDK-K4A-Wrapperp`。使用 CMake 4.4.4、Visual Studio 2022 Build Tools x64/MSBuild 17.14.60、Wrapper v2.0.12 及其配套 OrbbecSDK.dll 2.5.5，实际执行：
+原始实测目录是 `D:\Femto_mega\k4a_wrapper_compat_test`，Wrapper 预编译包位于 `D:\Femto_mega\OrbbecSDK-K4A-Wrapperp`。使用 CMake 4.4.4、Visual Studio 2022 Build Tools x64/MSBuild 17.14.60、Wrapper v2.0.12 及其配套 OrbbecSDK.dll 2.5.5，实际执行：
 
 ```powershell
 cd D:\Femto_mega\k4a_wrapper_compat_test
