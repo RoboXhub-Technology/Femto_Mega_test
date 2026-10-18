@@ -2,6 +2,8 @@
 
 本目录与《Orbbec Femto Mega 3D 深度相机验收记录表》一一对应，用 Orbbec SDK v2 采集设备实际值并保存 CSV/JSON 原始证据。主程序不依赖 OpenCV，适用 Windows 10/11 和 Linux。
 
+现在同时提供两套独立实现：原有 C++17/Orbbec SDK v2 版本，以及 [Python/pyorbbecsdk v2 版本](python/README.md)。Python版主程序位于 `python/femto_mega_acceptance.py`，完整自动测试入口为 `scripts/run_acceptance_plan_python.ps1`。
+
 ## 能够测量的验收项
 
 | 验收项 | 命令 | 主要输出 |
