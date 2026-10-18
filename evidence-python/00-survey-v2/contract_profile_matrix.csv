@@ -1,0 +1,16 @@
+﻿item,mode,width,height,fps,available,formats
+depth,WFOV unbinned,1024,1024,5,True,Y16
+depth,WFOV unbinned,1024,1024,15,True,Y16
+depth,WFOV binned,512,512,5,True,Y16
+depth,WFOV binned,512,512,15,True,Y16
+depth,WFOV binned,512,512,25,True,Y16
+depth,WFOV binned,512,512,30,True,Y16
+depth,NFOV unbinned,640,576,5,True,Y16
+depth,NFOV unbinned,640,576,15,True,Y16
+depth,NFOV unbinned,640,576,25,True,Y16
+depth,NFOV unbinned,640,576,30,True,Y16
+depth,NFOV binned,320,288,5,True,Y16
+depth,NFOV binned,320,288,15,True,Y16
+depth,NFOV binned,320,288,25,True,Y16
+depth,NFOV binned,320,288,30,True,Y16
+color,4K,3840,2160,30,False,

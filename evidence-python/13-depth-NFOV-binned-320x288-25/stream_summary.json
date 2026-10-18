@@ -1,0 +1,29 @@
+{
+  "sensor": "depth",
+  "profile": {
+    "profile_index": 11,
+    "width": 320,
+    "height": 288,
+    "fps": 25,
+    "format": "Y16"
+  },
+  "requested_duration_s": 60.0,
+  "requested_frames": 0,
+  "completed_requested_frames": true,
+  "max_wall_seconds": 300.0,
+  "wall_duration_s": 60.68699999997625,
+  "frames_received": 1487,
+  "timeouts": 0,
+  "estimated_index_gaps": 0,
+  "measured_fps_from_device_timestamps": 24.992314779112842,
+  "roi_size": 100,
+  "roi_valid_ratio_threshold": 0.95,
+  "frames_meeting_valid_ratio": 0,
+  "stable_frame_ratio": 0.0,
+  "meets_95_of_100_stability_rule": false,
+  "frames_with_depth_median": 897,
+  "mean_of_frame_medians_mm": 3103.603121516165,
+  "reference_distance_mm": null,
+  "relative_error_percent": null,
+  "meets_0_15_percent_limit": null
+}

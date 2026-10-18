@@ -81,6 +81,8 @@ HDR只查询能力，不写设置：
 python .\python\femto_mega_acceptance.py hdr --set query --out .\evidence-python\07-hdr-query
 ```
 
+若结果中的 `listed_in_supported_properties`、`read_supported` 和 `write_supported` 都是 `false`，表示当前设备/固件没有向SDK暴露RGB HDR属性。这是有效的“不支持”能力证据，不应把自动曝光或两次手动曝光误报为硬件HDR。
+
 显式开关HDR：
 
 ```powershell

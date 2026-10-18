@@ -1,0 +1,8 @@
+{
+  "property": "OB_PROP_COLOR_HDR_BOOL",
+  "read_supported": false,
+  "write_supported": false,
+  "requested_action": "query",
+  "value_before": null,
+  "value_after": null
+}

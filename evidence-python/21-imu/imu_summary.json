@@ -1,0 +1,15 @@
+{
+  "duration_s": 60.0,
+  "accelerometer": {
+    "frames": 2984,
+    "measured_hz": 49.77725637274451,
+    "estimated_index_gaps": 0,
+    "timeouts": 0
+  },
+  "gyroscope": {
+    "frames": 2984,
+    "measured_hz": 49.77725637274451,
+    "estimated_index_gaps": 0,
+    "timeouts": 0
+  }
+}

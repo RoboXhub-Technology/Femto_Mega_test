@@ -1,0 +1,17 @@
+{
+  "property": "OB_PROP_COLOR_HDR_BOOL",
+  "property_id": 2034,
+  "listed_in_supported_properties": false,
+  "read_supported": false,
+  "write_supported": false,
+  "requested_action": "query",
+  "value_before": null,
+  "value_after": null,
+  "conclusion": "property_not_exposed_by_device",
+  "device": {
+    "name": "Orbbec Femto Mega",
+    "serial_number": "CL3N241005X",
+    "firmware_version": "1.3.0"
+  },
+  "interpretation": "The current device/firmware does not expose the RGB HDR property; this is valid negative capability evidence, not a read failure."
+}

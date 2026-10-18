@@ -1,0 +1,765 @@
+[10/18 09:41:54.774906][info][24176][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:41:54.822940][info][24176][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:41:54.822947][info][24176][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:41:54.822952][info][24176][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:41:55.836813][info][24176][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:41:55.836853][info][24176][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:41:55.979047][info][24176][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:41:55.979137][info][24176][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x17616CC2310
+[10/18 09:41:58.251164][info][17128][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:41:58.291233][info][17128][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:41:58.291239][info][17128][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:41:58.291243][info][17128][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:41:59.308052][info][17128][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:41:59.308087][info][17128][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:41:59.465323][info][17128][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:41:59.465458][info][17128][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1D5B595F6D0
+[10/18 09:41:59.472885][info][17128][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:41:59.476938][info][17128][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:41:59.476968][info][17128][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 1024, height: 1024, fps: 5}
+[10/18 09:41:59.476981][info][17128][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:41:59.476989][info][17128][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 1024, height: 1024, fps: 5}
+[10/18 09:41:59.542000][info][17128][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:41:59.542007][info][17128][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:42:01.543956][warning][17128][Pipeline.cpp:335] [CL3N241005X] Wait for frame timeout, you can try to increase the wait time! current timeout=2000
+[10/18 09:42:01.818483][info][26016][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:42:07.009356][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=5.201310fps
+[10/18 09:42:07.009586][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=5.202312fps
+[10/18 09:42:12.013515][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:42:12.013730][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.995005fps
+[10/18 09:42:17.017189][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:42:17.017417][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:42:22.019732][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.997002fps
+[10/18 09:42:22.019917][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:42:27.021408][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999000fps
+[10/18 09:42:27.021644][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999000fps
+[10/18 09:42:32.024984][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:42:32.025237][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:42:37.025784][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999000fps
+[10/18 09:42:37.228889][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996157fps
+[10/18 09:42:42.029840][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:42:42.429935][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999038fps
+[10/18 09:42:47.033329][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:42:47.432458][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.998001fps
+[10/18 09:42:52.036825][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:42:52.433509][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999000fps
+[10/18 09:42:57.037696][info][6176][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999000fps
+[10/18 09:42:57.437610][info][26016][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:42:59.636640][info][17128][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:42:59.636660][info][17128][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:42:59.636679][info][17128][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:43:01.534404][info][17128][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:43:01.534839][info][17128][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:43:01.534849][info][17128][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:43:01.539815][info][17128][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:43:01.541319][info][17128][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1D5B595F6D0
+[10/18 09:43:01.543674][info][17128][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:43:01.920075][info][18356][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:43:01.969164][info][18356][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:43:01.969171][info][18356][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:43:01.969175][info][18356][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:43:02.991266][info][18356][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:43:02.991293][info][18356][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:43:03.147724][info][18356][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:43:03.147796][info][18356][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x2B179CDE310
+[10/18 09:43:03.153444][info][18356][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:43:03.155661][info][18356][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:43:03.155693][info][18356][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 1024, height: 1024, fps: 15}
+[10/18 09:43:03.155705][info][18356][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:43:03.155712][info][18356][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 1024, height: 1024, fps: 15}
+[10/18 09:43:03.166768][info][18356][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:43:03.166776][info][18356][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:43:05.002030][info][4708][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:43:10.027506][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=15.323382fps
+[10/18 09:43:10.027714][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=15.323382fps
+[10/18 09:43:15.031687][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.988009fps
+[10/18 09:43:15.031888][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.988009fps
+[10/18 09:43:20.033072][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.994003fps
+[10/18 09:43:20.033215][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.997001fps
+[10/18 09:43:25.034454][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.997001fps
+[10/18 09:43:25.034646][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.997001fps
+[10/18 09:43:30.040228][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.982021fps
+[10/18 09:43:30.040420][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.982021fps
+[10/18 09:43:35.041999][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.994003fps
+[10/18 09:43:35.042209][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.994003fps
+[10/18 09:43:40.044819][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:43:40.045058][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:43:45.046969][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.994003fps
+[10/18 09:43:45.047065][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.994003fps
+[10/18 09:43:50.112029][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=15.004935fps
+[10/18 09:43:50.112485][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=15.004935fps
+[10/18 09:43:55.115105][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:43:55.115344][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:44:00.120468][info][4708][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.985015fps
+[10/18 09:44:00.120685][info][712][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.982021fps
+[10/18 09:44:03.190402][info][18356][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:44:03.190438][info][18356][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:44:03.190469][info][18356][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:44:04.001924][info][18356][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:44:04.002220][info][18356][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:44:04.002226][info][18356][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:44:04.006314][info][18356][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:44:04.007190][info][18356][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x2B179CDE310
+[10/18 09:44:04.009357][info][18356][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:44:05.280021][info][24344][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:44:05.325721][info][24344][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:44:05.325731][info][24344][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:44:05.325739][info][24344][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:44:06.349231][info][24344][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:44:06.349251][info][24344][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:44:06.488889][info][24344][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:44:06.488959][info][24344][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1FF15D40C40
+[10/18 09:44:06.496604][info][24344][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:44:06.498199][info][24344][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:44:06.498229][info][24344][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 512, height: 512, fps: 5}
+[10/18 09:44:06.498248][info][24344][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:44:06.498272][info][24344][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 512, height: 512, fps: 5}
+[10/18 09:44:06.508559][info][24344][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:44:06.508567][info][24344][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:44:07.745122][info][11684][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:44:12.939819][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=5.197305fps
+[10/18 09:44:12.940089][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=5.197305fps
+[10/18 09:44:17.942988][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.997002fps
+[10/18 09:44:17.943186][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:44:22.944801][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.998001fps
+[10/18 09:44:22.945009][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.998001fps
+[10/18 09:44:27.946502][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999000fps
+[10/18 09:44:27.946709][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.998001fps
+[10/18 09:44:32.951677][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.995005fps
+[10/18 09:44:32.951878][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.995005fps
+[10/18 09:44:37.951713][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999000fps
+[10/18 09:44:38.152756][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999038fps
+[10/18 09:44:42.955696][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:44:43.155652][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:44:47.958896][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.997002fps
+[10/18 09:44:48.158167][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.998001fps
+[10/18 09:44:53.162420][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.997117fps
+[10/18 09:44:53.163140][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.995005fps
+[10/18 09:44:58.162776][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999000fps
+[10/18 09:44:58.364321][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999038fps
+[10/18 09:45:03.167597][info][11684][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:45:03.368616][info][24440][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:45:06.569549][info][24344][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:45:06.569576][info][24344][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:45:06.569601][info][24344][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:45:08.483171][info][24344][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:45:08.483647][info][24344][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:45:08.483654][info][24344][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:45:08.487988][info][24344][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:45:08.489729][info][24344][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1FF15D40C40
+[10/18 09:45:08.493618][info][24344][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:45:08.832652][info][24644][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:45:08.945129][info][24644][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:45:08.945140][info][24644][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:45:08.945149][info][24644][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:45:09.954199][info][24644][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:45:09.954218][info][24644][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:45:10.092774][info][24644][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:45:10.092840][info][24644][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1313D0DE4C0
+[10/18 09:45:10.100037][info][24644][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:45:10.103164][info][24644][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:45:10.103183][info][24644][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 512, height: 512, fps: 15}
+[10/18 09:45:10.103192][info][24644][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:45:10.103199][info][24644][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 512, height: 512, fps: 15}
+[10/18 09:45:10.114588][info][24644][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:45:10.114597][info][24644][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:45:10.947282][info][14232][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:45:15.948971][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=15.193923fps
+[10/18 09:45:15.949064][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=15.196960fps
+[10/18 09:45:20.951927][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:45:20.952148][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:45:25.953109][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.997001fps
+[10/18 09:45:25.953215][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.997001fps
+[10/18 09:45:30.956267][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:45:30.956444][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:45:35.960208][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.988009fps
+[10/18 09:45:35.960338][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.988009fps
+[10/18 09:45:40.963071][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:45:40.963258][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:45:45.964020][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.997001fps
+[10/18 09:45:45.964127][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.997001fps
+[10/18 09:45:50.966614][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.994003fps
+[10/18 09:45:50.966833][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:45:55.971202][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.985015fps
+[10/18 09:45:55.971325][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.988009fps
+[10/18 09:46:00.972252][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.997001fps
+[10/18 09:46:00.972442][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.997001fps
+[10/18 09:46:05.975287][info][14232][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:46:05.975469][info][23028][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:46:10.177087][info][24644][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:46:10.177115][info][24644][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:46:10.177141][info][24644][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:46:11.019499][info][24644][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:46:11.019943][info][24644][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:46:11.019948][info][24644][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:46:11.024316][info][24644][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:46:11.025093][info][24644][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1313D0DE4C0
+[10/18 09:46:11.027272][info][24644][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:46:12.085518][info][10376][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:46:12.130944][info][10376][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:46:12.130950][info][10376][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:46:12.130954][info][10376][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:46:13.165090][info][10376][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:46:13.165111][info][10376][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:46:13.297013][info][10376][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:46:13.297090][info][10376][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1C19143AFF0
+[10/18 09:46:13.302211][info][10376][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:46:13.303305][info][10376][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:46:13.303323][info][10376][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 512, height: 512, fps: 25}
+[10/18 09:46:13.303332][info][10376][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:46:13.303338][info][10376][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 512, height: 512, fps: 25}
+[10/18 09:46:13.313869][info][10376][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:46:13.313877][info][10376][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:46:14.080337][info][13660][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:46:19.105287][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=25.273632fps
+[10/18 09:46:19.105511][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=25.278662fps
+[10/18 09:46:24.108557][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.985010fps
+[10/18 09:46:24.108758][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.980015fps
+[10/18 09:46:29.113414][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.975025fps
+[10/18 09:46:29.113608][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.980015fps
+[10/18 09:46:34.151708][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=25.004961fps
+[10/18 09:46:34.151959][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=25.004961fps
+[10/18 09:46:39.154768][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.985010fps
+[10/18 09:46:39.154981][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.985010fps
+[10/18 09:46:44.158055][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.985010fps
+[10/18 09:46:44.158166][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.985010fps
+[10/18 09:46:49.161178][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.985010fps
+[10/18 09:46:49.161314][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.985010fps
+[10/18 09:46:54.163621][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.990005fps
+[10/18 09:46:54.163817][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.985010fps
+[10/18 09:46:59.163876][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.995001fps
+[10/18 09:46:59.205592][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.995041fps
+[10/18 09:47:04.165323][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.995001fps
+[10/18 09:47:04.206539][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.995001fps
+[10/18 09:47:09.167333][info][13660][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.990005fps
+[10/18 09:47:09.208764][info][15484][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.985010fps
+[10/18 09:47:13.332185][info][10376][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:47:13.332205][info][10376][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:47:13.332221][info][10376][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:47:14.000254][info][10376][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:47:14.000878][info][10376][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:47:14.000887][info][10376][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:47:14.004385][info][10376][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:47:14.006111][info][10376][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1C19143AFF0
+[10/18 09:47:14.010785][info][10376][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:47:15.096480][info][26584][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:47:15.207497][info][26584][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:47:15.207508][info][26584][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:47:15.207516][info][26584][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:47:16.225898][info][26584][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:47:16.225922][info][26584][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:47:16.353312][info][26584][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:47:16.353380][info][26584][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1D7F0C051E0
+[10/18 09:47:16.357811][info][26584][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:47:16.358885][info][26584][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:47:16.358924][info][26584][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 512, height: 512, fps: 30}
+[10/18 09:47:16.358943][info][26584][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:47:16.358952][info][26584][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 512, height: 512, fps: 30}
+[10/18 09:47:16.367851][info][26584][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:47:16.367857][info][26584][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:47:17.118475][info][13980][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:47:22.131976][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=30.315119fps
+[10/18 09:47:22.132221][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=30.321165fps
+[10/18 09:47:27.133891][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:47:27.134101][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:47:32.137545][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.982012fps
+[10/18 09:47:32.137742][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.976019fps
+[10/18 09:47:37.138389][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.994001fps
+[10/18 09:47:37.171112][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=30.001987fps
+[10/18 09:47:42.140056][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:47:42.175871][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.970030fps
+[10/18 09:47:47.146831][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.958059fps
+[10/18 09:47:47.178393][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:47:52.180930][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.996027fps
+[10/18 09:47:52.181157][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.982012fps
+[10/18 09:47:57.183908][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.982012fps
+[10/18 09:47:57.184122][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.982012fps
+[10/18 09:48:02.186478][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:48:02.187244][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.982012fps
+[10/18 09:48:07.189862][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.976019fps
+[10/18 09:48:07.190078][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.982012fps
+[10/18 09:48:12.192859][info][13980][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.982012fps
+[10/18 09:48:12.193081][info][10004][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.982012fps
+[10/18 09:48:16.362153][info][26584][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:48:16.362191][info][26584][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:48:16.362225][info][26584][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:48:16.965408][info][26584][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:48:16.965899][info][26584][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:48:16.965909][info][26584][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:48:16.971368][info][26584][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:48:16.973124][info][26584][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1D7F0C051E0
+[10/18 09:48:16.976749][info][26584][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:48:18.260239][info][18928][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:48:18.309943][info][18928][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:48:18.309960][info][18928][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:48:18.309968][info][18928][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:48:19.325269][info][18928][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:48:19.325316][info][18928][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:48:19.454622][info][18928][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:48:19.454694][info][18928][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x2835895D250
+[10/18 09:48:19.460260][info][18928][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:48:19.461734][info][18928][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:48:19.461777][info][18928][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 5}
+[10/18 09:48:19.461796][info][18928][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:48:19.461803][info][18928][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 5}
+[10/18 09:48:19.471756][info][18928][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:48:19.471763][info][18928][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:48:20.914858][info][18944][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:48:26.108398][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=5.199307fps
+[10/18 09:48:26.108644][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=5.199307fps
+[10/18 09:48:31.112169][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:48:31.112428][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:48:36.116058][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:48:36.116289][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:48:41.119057][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.997002fps
+[10/18 09:48:41.119256][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:48:46.119708][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999000fps
+[10/18 09:48:46.321031][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.998077fps
+[10/18 09:48:51.123598][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:48:51.323487][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.998001fps
+[10/18 09:48:56.126315][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:48:56.327551][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:49:01.131301][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.995005fps
+[10/18 09:49:01.331292][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:49:06.133358][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.998001fps
+[10/18 09:49:06.332466][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999000fps
+[10/18 09:49:11.135662][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:49:11.335458][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.997002fps
+[10/18 09:49:16.140275][info][15088][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:49:16.339710][info][18944][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.995005fps
+[10/18 09:49:19.544133][info][18928][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:49:19.544161][info][18928][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:49:19.544184][info][18928][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:49:21.453154][info][18928][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:49:21.453618][info][18928][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:49:21.453626][info][18928][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:49:21.458085][info][18928][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:49:21.460417][info][18928][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x2835895D250
+[10/18 09:49:21.464194][info][18928][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:49:21.801046][info][9736][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:49:21.847144][info][9736][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:49:21.847151][info][9736][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:49:21.847155][info][9736][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:49:22.883722][info][9736][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:49:22.883747][info][9736][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:49:23.013425][info][9736][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:49:23.013491][info][9736][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x28CFF886330
+[10/18 09:49:23.019012][info][9736][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:49:23.020414][info][9736][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:49:23.020430][info][9736][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 15}
+[10/18 09:49:23.020439][info][9736][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:49:23.020444][info][9736][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 15}
+[10/18 09:49:23.030628][info][9736][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:49:23.030634][info][9736][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:49:23.932695][info][5332][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:49:29.001121][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=15.193371fps
+[10/18 09:49:29.001354][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=15.193371fps
+[10/18 09:49:34.068799][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.996054fps
+[10/18 09:49:34.069054][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.996054fps
+[10/18 09:49:39.071237][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.994003fps
+[10/18 09:49:39.071442][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.994003fps
+[10/18 09:49:44.073850][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:49:44.073979][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:49:49.077942][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.988009fps
+[10/18 09:49:49.078146][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.988009fps
+[10/18 09:49:54.080401][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.994003fps
+[10/18 09:49:54.080583][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.994003fps
+[10/18 09:49:59.080724][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.997001fps
+[10/18 09:49:59.080906][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.997001fps
+[10/18 09:50:04.085277][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.988009fps
+[10/18 09:50:04.085531][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.988009fps
+[10/18 09:50:09.089113][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.988009fps
+[10/18 09:50:09.089778][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.985015fps
+[10/18 09:50:14.091590][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.994003fps
+[10/18 09:50:14.091813][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.994003fps
+[10/18 09:50:19.096326][info][5332][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.985015fps
+[10/18 09:50:19.096628][info][16240][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.988009fps
+[10/18 09:50:23.029715][info][9736][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:50:23.029753][info][9736][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:50:23.029784][info][9736][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:50:23.869983][info][9736][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:50:23.870315][info][9736][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:50:23.870320][info][9736][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:50:23.874257][info][9736][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:50:23.875360][info][9736][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x28CFF886330
+[10/18 09:50:23.877305][info][9736][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:50:25.137253][info][2604][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:50:25.245366][info][2604][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:50:25.245372][info][2604][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:50:25.245375][info][2604][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:50:26.252941][info][2604][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:50:26.252968][info][2604][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:50:26.410542][info][2604][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:50:26.410645][info][2604][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1AFA09A9650
+[10/18 09:50:26.416191][info][2604][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:50:26.418445][info][2604][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:50:26.418467][info][2604][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 25}
+[10/18 09:50:26.418479][info][2604][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:50:26.418486][info][2604][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 25}
+[10/18 09:50:26.483472][info][2604][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:50:26.483480][info][2604][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:50:27.382608][info][25528][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:50:32.394399][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=25.339186fps
+[10/18 09:50:32.394567][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=25.344242fps
+[10/18 09:50:37.400245][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.970036fps
+[10/18 09:50:37.400430][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.970036fps
+[10/18 09:50:42.403566][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.985010fps
+[10/18 09:50:42.403754][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.980015fps
+[10/18 09:50:47.405547][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.990005fps
+[10/18 09:50:47.405662][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.990005fps
+[10/18 09:50:52.448233][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.985126fps
+[10/18 09:50:52.448427][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.990084fps
+[10/18 09:50:57.451869][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.980015fps
+[10/18 09:50:57.452079][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.980015fps
+[10/18 09:51:02.453939][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.990005fps
+[10/18 09:51:02.454119][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.990005fps
+[10/18 09:51:07.493833][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=25.000000fps
+[10/18 09:51:07.494031][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=25.000000fps
+[10/18 09:51:12.499467][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.975025fps
+[10/18 09:51:12.499687][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.970036fps
+[10/18 09:51:17.539367][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=25.000000fps
+[10/18 09:51:17.539560][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=25.004961fps
+[10/18 09:51:22.544703][info][25528][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.970036fps
+[10/18 09:51:22.545001][info][13468][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.970036fps
+[10/18 09:51:26.508851][info][2604][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:51:26.508880][info][2604][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:51:26.508906][info][2604][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:51:27.171950][info][2604][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:51:27.172464][info][2604][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:51:27.172473][info][2604][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:51:27.175659][info][2604][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:51:27.231162][info][2604][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1AFA09A9650
+[10/18 09:51:27.233920][info][2604][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:51:28.535844][info][5068][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:51:28.589429][info][5068][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:51:28.589438][info][5068][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:51:28.589445][info][5068][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:51:29.620429][info][5068][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:51:29.620474][info][5068][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:51:29.752765][info][5068][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:51:29.752828][info][5068][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1524F953F80
+[10/18 09:51:29.758126][info][5068][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:51:29.759392][info][5068][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:51:29.759409][info][5068][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[10/18 09:51:29.759416][info][5068][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:51:29.759422][info][5068][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 640, height: 576, fps: 30}
+[10/18 09:51:29.768062][info][5068][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:51:29.768069][info][5068][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:51:30.599203][info][21360][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:51:35.601184][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=30.387846fps
+[10/18 09:51:35.601430][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=30.387846fps
+[10/18 09:51:40.603154][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:51:40.603419][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:51:45.603720][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.994001fps
+[10/18 09:51:45.603854][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.994001fps
+[10/18 09:51:50.608252][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.976019fps
+[10/18 09:51:50.608364][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.976019fps
+[10/18 09:51:55.611553][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.982012fps
+[10/18 09:51:55.611679][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.976019fps
+[10/18 09:52:00.614060][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.982012fps
+[10/18 09:52:00.614149][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:52:05.615138][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.994001fps
+[10/18 09:52:05.615363][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.994001fps
+[10/18 09:52:10.620207][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.970030fps
+[10/18 09:52:10.620407][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.970030fps
+[10/18 09:52:15.653546][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=30.001987fps
+[10/18 09:52:15.654238][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.996027fps
+[10/18 09:52:20.658601][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.970030fps
+[10/18 09:52:20.658819][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.970030fps
+[10/18 09:52:25.659410][info][21360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.994001fps
+[10/18 09:52:25.691959][info][23996][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=30.001987fps
+[10/18 09:52:29.762599][info][5068][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:52:29.762619][info][5068][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:52:29.762635][info][5068][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:52:30.364486][info][5068][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:52:30.364980][info][5068][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:52:30.364987][info][5068][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:52:30.369398][info][5068][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:52:30.370299][info][5068][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1524F953F80
+[10/18 09:52:30.372862][info][5068][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:52:31.615505][info][23568][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:52:31.658486][info][23568][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:52:31.658493][info][23568][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:52:31.658497][info][23568][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:52:32.694681][info][23568][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:52:32.694726][info][23568][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:52:32.827265][info][23568][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:52:32.827336][info][23568][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x257D4C89C60
+[10/18 09:52:32.832581][info][23568][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:52:32.833710][info][23568][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:52:32.833725][info][23568][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 320, height: 288, fps: 5}
+[10/18 09:52:32.833732][info][23568][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:52:32.833738][info][23568][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 320, height: 288, fps: 5}
+[10/18 09:52:32.842970][info][23568][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:52:32.842977][info][23568][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:52:34.083050][info][25984][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:52:39.088705][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=5.193768fps
+[10/18 09:52:39.088949][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=5.194805fps
+[10/18 09:52:44.290059][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999038fps
+[10/18 09:52:44.290178][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999038fps
+[10/18 09:52:49.294341][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:52:49.294459][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:52:54.494671][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=5.000000fps
+[10/18 09:52:54.494897][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999038fps
+[10/18 09:52:59.497126][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.997002fps
+[10/18 09:52:59.497361][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.998001fps
+[10/18 09:53:04.498184][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.999000fps
+[10/18 09:53:04.498416][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.999000fps
+[10/18 09:53:09.501104][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.997002fps
+[10/18 09:53:09.501329][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.997002fps
+[10/18 09:53:14.502870][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.998001fps
+[10/18 09:53:14.503110][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.998001fps
+[10/18 09:53:19.507229][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.996003fps
+[10/18 09:53:19.507441][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.996003fps
+[10/18 09:53:24.509223][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=4.998001fps
+[10/18 09:53:24.509463][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=4.998001fps
+[10/18 09:53:29.708148][info][25984][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=5.000962fps
+[10/18 09:53:29.708365][info][17628][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=5.000962fps
+[10/18 09:53:32.909203][info][23568][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:53:32.909222][info][23568][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:53:32.909235][info][23568][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:53:34.816268][info][23568][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:53:34.816816][info][23568][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:53:34.816825][info][23568][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:53:34.821968][info][23568][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:53:34.823539][info][23568][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x257D4C89C60
+[10/18 09:53:34.827637][info][23568][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:53:35.145185][info][19584][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:53:35.255916][info][19584][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:53:35.255928][info][19584][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:53:35.255936][info][19584][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:53:36.263240][info][19584][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:53:36.263264][info][19584][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:53:36.412096][info][19584][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:53:36.412167][info][19584][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x131ED17B750
+[10/18 09:53:36.417890][info][19584][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:53:36.420789][info][19584][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:53:36.420830][info][19584][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 320, height: 288, fps: 15}
+[10/18 09:53:36.420846][info][19584][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:53:36.420857][info][19584][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 320, height: 288, fps: 15}
+[10/18 09:53:36.432654][info][19584][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:53:36.432662][info][19584][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:53:37.062330][info][15884][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:53:42.134508][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=15.181388fps
+[10/18 09:53:42.134687][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=15.181388fps
+[10/18 09:53:47.198683][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=15.004935fps
+[10/18 09:53:47.198797][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=15.007898fps
+[10/18 09:53:52.203250][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.988009fps
+[10/18 09:53:52.203347][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.988009fps
+[10/18 09:53:57.204058][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.997001fps
+[10/18 09:53:57.204166][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.997001fps
+[10/18 09:54:02.271874][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.996054fps
+[10/18 09:54:02.271987][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.996054fps
+[10/18 09:54:07.339109][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.999014fps
+[10/18 09:54:07.339315][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.999014fps
+[10/18 09:54:12.408767][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.990137fps
+[10/18 09:54:12.408958][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.990137fps
+[10/18 09:54:17.411838][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:54:17.412051][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:54:22.476390][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=15.007898fps
+[10/18 09:54:22.476600][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=15.007898fps
+[10/18 09:54:27.479201][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.991006fps
+[10/18 09:54:27.479392][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:54:32.481466][info][15884][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=14.994003fps
+[10/18 09:54:32.481682][info][10588][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=14.991006fps
+[10/18 09:54:36.482544][info][19584][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:54:36.482567][info][19584][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:54:36.482586][info][19584][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:54:37.321402][info][19584][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:54:37.321915][info][19584][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:54:37.321929][info][19584][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:54:37.326600][info][19584][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:54:37.328512][info][19584][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x131ED17B750
+[10/18 09:54:37.331607][info][19584][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:54:38.559956][info][23724][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:54:38.603382][info][23724][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:54:38.603389][info][23724][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:54:38.603393][info][23724][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:54:39.628219][info][23724][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:54:39.628258][info][23724][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:54:39.762533][info][23724][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:54:39.762603][info][23724][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x27FF75BE8F0
+[10/18 09:54:39.767146][info][23724][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:54:39.767900][info][23724][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:54:39.767913][info][23724][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 320, height: 288, fps: 25}
+[10/18 09:54:39.767921][info][23724][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:54:39.767926][info][23724][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 320, height: 288, fps: 25}
+[10/18 09:54:39.777720][info][23724][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:54:39.777725][info][23724][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:54:40.336140][info][20360][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:54:45.363325][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=25.263577fps
+[10/18 09:54:45.363439][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=25.263577fps
+[10/18 09:54:50.364357][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.995001fps
+[10/18 09:54:50.364508][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.995001fps
+[10/18 09:54:55.366013][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.990005fps
+[10/18 09:54:55.366217][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.990005fps
+[10/18 09:55:00.368324][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.990005fps
+[10/18 09:55:00.368571][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.990005fps
+[10/18 09:55:05.372314][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.980015fps
+[10/18 09:55:05.372472][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.980015fps
+[10/18 09:55:10.411231][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=25.004961fps
+[10/18 09:55:10.411409][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=25.004961fps
+[10/18 09:55:15.414679][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.985010fps
+[10/18 09:55:15.414997][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.980015fps
+[10/18 09:55:20.414957][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.995001fps
+[10/18 09:55:20.454650][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=25.004961fps
+[10/18 09:55:25.416007][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.995001fps
+[10/18 09:55:25.456830][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.985010fps
+[10/18 09:55:30.417258][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.995001fps
+[10/18 09:55:30.457780][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.995001fps
+[10/18 09:55:35.419848][info][20360][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=24.985010fps
+[10/18 09:55:35.459892][info][1412][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=24.990005fps
+[10/18 09:55:39.780611][info][23724][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:55:39.780639][info][23724][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:55:39.780662][info][23724][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:55:40.446385][info][23724][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:55:40.447008][info][23724][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:55:40.447021][info][23724][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:55:40.450979][info][23724][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:55:40.452949][info][23724][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x27FF75BE8F0
+[10/18 09:55:40.457201][info][23724][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:55:41.678960][info][1736][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:55:41.786911][info][1736][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:55:41.786920][info][1736][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:55:41.786924][info][1736][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:55:42.801839][info][1736][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:55:42.801874][info][1736][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:55:42.955922][info][1736][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:55:42.955991][info][1736][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1C5528A2F10
+[10/18 09:55:42.961218][info][1736][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:55:42.963925][info][1736][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:55:42.963954][info][1736][VideoSensor.cpp:61] [CL3N241005X] Try to start stream: {type: Depth, format: Y16, width: 320, height: 288, fps: 30}
+[10/18 09:55:42.963965][info][1736][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Depth
+[10/18 09:55:42.963972][info][1736][VideoSensor.cpp:130] [CL3N241005X] Start backend stream: {type: Depth, format: Y16, width: 320, height: 288, fps: 30}
+[10/18 09:55:42.976050][info][1736][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:55:42.976059][info][1736][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:55:43.517292][info][15124][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Depth
+[10/18 09:55:48.537007][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=30.278885fps
+[10/18 09:55:48.537118][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=30.284918fps
+[10/18 09:55:53.538415][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.994001fps
+[10/18 09:55:53.538498][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.994001fps
+[10/18 09:55:58.540476][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:55:58.540576][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:56:03.542284][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:56:03.542391][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:56:08.544010][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:56:08.544141][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:56:13.546434][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:56:13.546616][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:56:18.547880][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:56:18.548092][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:56:23.551855][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.976019fps
+[10/18 09:56:23.552048][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.976019fps
+[10/18 09:56:28.584556][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=30.007948fps
+[10/18 09:56:28.585231][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=30.001987fps
+[10/18 09:56:33.586577][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:56:33.586777][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.988007fps
+[10/18 09:56:38.587818][info][15124][VideoSensor.cpp:180] [CL3N241005X] Depth backend frame callback, frameRate=29.988007fps
+[10/18 09:56:38.588051][info][21524][SensorBase.cpp:405] [CL3N241005X] Depth Streaming... frameRate=29.994001fps
+[10/18 09:56:42.990041][info][1736][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:56:42.990062][info][1736][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:56:42.990078][info][1736][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Depth
+[10/18 09:56:43.598052][info][1736][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Depth
+[10/18 09:56:43.598574][info][1736][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Depth
+[10/18 09:56:43.598582][info][1736][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:56:43.602802][info][1736][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:56:43.604430][info][1736][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1C5528A2F10
+[10/18 09:56:43.609095][info][1736][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:56:45.104289][info][24880][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:56:45.154394][info][24880][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:56:45.154400][info][24880][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:56:45.154404][info][24880][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:56:46.175687][info][24880][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:56:46.175715][info][24880][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:56:46.304373][info][24880][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:56:46.304452][info][24880][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1A30DADAFC0
+[10/18 09:56:46.329284][info][24880][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1A30DADAFC0
+[10/18 09:56:46.329414][info][24880][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:56:47.609719][info][24640][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:56:47.660069][info][24640][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:56:47.660083][info][24640][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:56:47.660106][info][24640][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:56:48.671909][info][24640][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:56:48.671934][info][24640][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:56:48.799924][info][24640][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 09:56:48.800027][info][24640][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x1C412D226B0
+[10/18 09:56:48.829892][info][24640][Pipeline.cpp:228] [CL3N241005X] Check and set config done!
+[10/18 09:56:48.829908][info][24640][Pipeline.cpp:266] [CL3N241005X] Try to start streams!
+[10/18 09:56:48.829919][info][24640][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Accel
+[10/18 09:56:48.870873][info][24640][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPED to STARTING@Gyro
+[10/18 09:56:48.991845][info][24640][Pipeline.cpp:293] [CL3N241005X] Start streams done!
+[10/18 09:56:48.991855][info][24640][Pipeline.cpp:250] [CL3N241005X] Pipeline start done!
+[10/18 09:56:49.091585][info][11936][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Accel
+[10/18 09:56:49.091658][info][11936][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STARTING to STREAMING@Gyro
+[10/18 09:56:54.111039][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=50.009960fps
+[10/18 09:56:54.111144][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=50.009960fps
+[10/18 09:56:59.112932][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.780090fps
+[10/18 09:56:59.112970][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.780090fps
+[10/18 09:57:04.132901][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.800797fps
+[10/18 09:57:04.132951][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.800797fps
+[10/18 09:57:09.134288][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.790043fps
+[10/18 09:57:09.134362][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.790043fps
+[10/18 09:57:14.134797][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.790043fps
+[10/18 09:57:14.134836][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.790043fps
+[10/18 09:57:19.139868][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.750248fps
+[10/18 09:57:19.139911][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.750248fps
+[10/18 09:57:24.140828][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.790043fps
+[10/18 09:57:24.140861][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.790043fps
+[10/18 09:57:29.142144][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.790043fps
+[10/18 09:57:29.142214][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.790043fps
+[10/18 09:57:34.144692][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.770142fps
+[10/18 09:57:34.145125][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.770142fps
+[10/18 09:57:39.152281][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.730377fps
+[10/18 09:57:39.152352][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.730377fps
+[10/18 09:57:44.173818][info][11936][SensorBase.cpp:478] [CL3N241005X] Accel Streaming... frameRate=49.780964fps
+[10/18 09:57:44.173886][info][11936][SensorBase.cpp:478] [CL3N241005X] Gyro Streaming... frameRate=49.780964fps
+[10/18 09:57:49.012084][info][24640][Pipeline.cpp:367] [CL3N241005X] Try to stop pipeline!
+[10/18 09:57:49.012107][info][24640][Pipeline.cpp:343] [CL3N241005X] Try to stop streams!
+[10/18 09:57:49.012122][info][24640][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Gyro
+[10/18 09:57:49.201565][info][24640][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Gyro
+[10/18 09:57:49.201582][info][24640][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Gyro
+[10/18 09:57:49.201590][info][24640][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STREAMING to STOPPING@Accel
+[10/18 09:57:49.221586][info][24640][SensorBase.cpp:216] [CL3N241005X] Stream state changed from STOPPING to STOPPED@Accel
+[10/18 09:57:49.221597][info][24640][Pipeline.cpp:357] [CL3N241005X] Sensor stream stopped, sensorType=Accel
+[10/18 09:57:49.221600][info][24640][Pipeline.cpp:363] [CL3N241005X] Stop streams done!
+[10/18 09:57:49.221608][info][24640][Pipeline.cpp:393] [CL3N241005X] Stop pipeline done!
+[10/18 09:57:49.222590][info][24640][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x1C412D226B0
+[10/18 09:57:49.225463][info][24640][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:57:49.225484][info][24640][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 09:57:50.622439][info][16736][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 09:57:50.733464][info][16736][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 09:57:50.733471][info][16736][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:57:50.733477][info][16736][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 09:57:51.760403][info][16736][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 09:57:51.760425][info][16736][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 09:57:51.883311][info][16736][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 10:09:01.669260][info][25440][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 10:09:01.676488][error][25440][WinHelpers.cpp:519] CreateFile failed
+[10/18 10:09:01.676578][error][25440][WinHelpers.cpp:554] could not find camera in windows device tree
+[10/18 10:09:01.678471][error][25440][WinHelpers.cpp:519] CreateFile failed
+[10/18 10:09:01.678516][error][25440][WinHelpers.cpp:554] could not find camera in windows device tree
+[10/18 10:09:01.680300][error][25440][WinHelpers.cpp:519] CreateFile failed
+[10/18 10:09:01.680375][error][25440][WinHelpers.cpp:554] could not find camera in windows device tree
+[10/18 10:09:01.688929][info][25440][DeviceManager.cpp:25] Current found device(s): (0)
+[10/18 10:09:01.688953][info][25440][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 10:09:02.725625][info][25440][DeviceManager.cpp:25] Current device(s) list: (0)
+[10/18 10:11:19.959136][info][10484][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 10:11:20.072591][info][10484][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 10:11:20.072598][info][10484][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 10:11:20.072601][info][10484][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 10:11:21.096379][info][10484][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 10:11:21.096401][info][10484][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 10:11:21.234885][info][10484][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0
+[10/18 10:11:21.236333][info][10484][Pipeline.cpp:54] [CL3N241005X] Pipeline created with device: {name: Femto Mega, sn: CL3N241005X}, @0x2B18F98F650
+[10/18 10:11:21.342237][info][10484][Pipeline.cpp:65] [CL3N241005X] Pipeline destroyed! @0x2B18F98F650
+[10/18 10:11:21.342772][info][10484][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 10:11:21.342783][info][10484][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 10:11:21.342913][info][10484][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 10:11:21.344899][info][10484][SensorBase.cpp:53] [CL3N241005X] SensorBase is destroyed
+[10/18 10:11:35.072812][info][12336][HostTimestampProvider.cpp:36] Update clock type to: realtime(0)
+[10/18 10:11:35.117042][info][12336][DeviceManager.cpp:25] Current found device(s): (1)
+[10/18 10:11:35.117048][info][12336][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 10:11:35.117053][info][12336][DeviceManager.cpp:463] Enable net device enumeration: true
+[10/18 10:11:36.129256][info][12336][DeviceManager.cpp:25] Current device(s) list: (1)
+[10/18 10:11:36.129278][info][12336][DeviceManager.cpp:34] 	- Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X, Connection: USB3.2
+[10/18 10:11:36.259293][info][12336][DeviceManager.cpp:200] Device created successfully! Name: Femto Mega, PID: 0x0669, SN/ID: CL3N241005X FW: 1.3.0

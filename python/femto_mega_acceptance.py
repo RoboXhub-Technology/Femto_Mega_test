@@ -400,9 +400,11 @@ def command_survey(args: argparse.Namespace) -> None:
             "name": info.get_name(),
             "serial_number": info.get_serial_number(),
             "firmware_version": info.get_firmware_version(),
-            "hardware_version": safe_call(info.get_hardware_version),
-            "connection_type": safe_call(info.get_connection_type),
-            "ip_address": safe_call(info.get_device_ip_address),
+            # Some Femto Mega SDK builds can terminate inside the optional
+            # hardware/IP getters when the field is unavailable.  Record the
+            # connection selected by this program instead of calling them.
+            "connection_mode": "network" if args.ip else "enumerated/USB",
+            "ip_address": args.ip,
             "vid": info.get_vid(),
             "pid": info.get_pid(),
         },
@@ -411,6 +413,7 @@ def command_survey(args: argparse.Namespace) -> None:
             "rgb_3840x2160_30_listed": bool(rgb_matches),
             "color_hdr_read_supported": hdr_read,
             "color_hdr_write_supported": hdr_write,
+            "color_hdr_property_listed": any(row["id"] == int(hdr_id.value) for row in property_rows),
             "color_hdr_current": device.get_bool_property(hdr_id) if hdr_read else None,
             "accelerometer_present": has_accel,
             "gyroscope_present": has_gyro,
@@ -616,6 +619,11 @@ def command_hdr(args: argparse.Namespace) -> None:
     out = output_dir(args.out, "hdr")
     _, device = open_device(args)
     property_id = OBPropertyID.OB_PROP_COLOR_HDR_BOOL
+    supported_property_ids = {
+        int(device.get_supported_property(index).id.value)
+        for index in range(int(device.get_support_property_count()))
+    }
+    property_listed = int(property_id.value) in supported_property_ids
     can_read = bool(device.is_property_supported(property_id, OBPermissionType.PERMISSION_READ))
     can_write = bool(device.is_property_supported(property_id, OBPermissionType.PERMISSION_WRITE))
     before = device.get_bool_property(property_id) if can_read else None
@@ -625,13 +633,34 @@ def command_hdr(args: argparse.Namespace) -> None:
         device.set_bool_property(property_id, args.set == "on")
         time.sleep(0.3)
     after = device.get_bool_property(property_id) if can_read else None
+    info = device.get_device_info()
+    if can_read or can_write:
+        conclusion = "supported_by_device_sdk_property"
+    elif property_listed:
+        conclusion = "property_listed_but_permission_denied"
+    else:
+        conclusion = "property_not_exposed_by_device"
     write_json(out / "hdr_summary.json", {
         "property": "OB_PROP_COLOR_HDR_BOOL",
+        "property_id": int(property_id.value),
+        "listed_in_supported_properties": property_listed,
         "read_supported": can_read,
         "write_supported": can_write,
         "requested_action": args.set,
         "value_before": before,
         "value_after": after,
+        "conclusion": conclusion,
+        "device": {
+            "name": info.get_name(),
+            "serial_number": info.get_serial_number(),
+            "firmware_version": info.get_firmware_version(),
+        },
+        "interpretation": (
+            "The current device/firmware does not expose the RGB HDR property; "
+            "this is valid negative capability evidence, not a read failure."
+            if conclusion == "property_not_exposed_by_device"
+            else "See capability flags and values above."
+        ),
     })
     print(f"HDR query/test complete: {out}")
 
